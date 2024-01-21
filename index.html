@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .project {
+            margin-bottom: 30px;
+        }
+
+        .project h3 {
+            color: #333;
+        }
+
+        .review {
+            margin-bottom: 20px;
+        }
+
+        .review p {
+            font-style: italic;
+        }
+
+        /* CSS Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Image styling */
+        .portfolio-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+            /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Box shadow for a subtle effect */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Abdullah's Portfolio</h1>
+    </header>
+
+    <section id="projects" class="animated">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1...</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2...</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <!-- Image from S3 bucket -->
+    <img class="portfolio-image" src="https://myterraform2030project.s3.amazonaws.com/pic.PNG"
+        alt="Abdullah's Portfolio Image">
+
+    <section id="reviews" class="animated">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p>"Abdullah did an amazing job on our project. Highly recommend!"</p>
+        </div>
+        <div class="review">
+            <p>"Great communication and excellent problem-solving skills."</p>
+        </div>
+        <!-- Add more reviews as needed -->
+    </section>
+
+</body>
+
+</html>
